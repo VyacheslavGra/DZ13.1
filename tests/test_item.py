@@ -27,3 +27,9 @@ def test_name_setter_truncate():
     item = Item('Телефон', 25000, 3)
     item.name = 'Суперсмартфон'
     assert item.name == 'Суперсмартфон'
+
+    def test_repr():
+        assert repr(item3) == "Item('питон', 10000, 20)"
+
+    def test_str():
+        assert str(item3) == "питон"
